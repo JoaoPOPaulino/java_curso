@@ -44,12 +44,12 @@ class Chamado {
         return status;
     }
 
-    public void chamadoEm_Andamento() {
+    public void abrirChamado() {
         this.status = "Em andamento";
         System.out.println("Chamado " + numero + " está em andamento.");
     }
 
-    public void chamadoResolvido() {
+    public void fecharChamado() {
         this.status = "Resolvido";
         System.out.println("Chamado " + numero + " foi resolvido.");
     }
@@ -163,10 +163,10 @@ public class Main {
                 System.out.println();
                 chamadoHardware.exibirResumo();
                 System.out.println();
-                chamadoHardware.chamadoEm_Andamento();
+                chamadoHardware.abrirChamado();
                 chamadoHardware.exibirResumo();
                 System.out.println();
-                chamadoHardware.chamadoResolvido();
+                chamadoHardware.fecharChamado();
                 chamadoHardware.exibirResumo();
                 break;
             case 2:
@@ -177,10 +177,10 @@ public class Main {
                 System.out.println();
                 chamadoSoftware.exibirResumo();
                 System.out.println();
-                chamadoSoftware.chamadoEm_Andamento();
+                chamadoSoftware.abrirChamado();
                 chamadoSoftware.exibirResumo();
                 System.out.println();
-                chamadoSoftware.chamadoResolvido();
+                chamadoSoftware.fecharChamado();
                 chamadoSoftware.exibirResumo();
                 break;
             default:
